@@ -1,0 +1,286 @@
+:root {
+    --primary-gradient: linear-gradient(90deg, #E5A355, #C2304E);
+    --background-gradient: linear-gradient(135deg, #F1CDA3 0%, #E19AA6 50%, #FFDCD5 100%);
+
+    --bg-color: #FFF6F4;
+    --card-bg: rgba(255, 250, 249, 0.88);
+    --panel-bg: rgba(255, 250, 249, 0.92);
+
+    --text-main: #7B4E5C;
+    --text-dark: #5f3b47;
+    --text-light: #FFFAF9;
+
+    --accent-red: #C2304E;
+    --accent-orange: #E5A355;
+    --accent-mauve: #7B4E5C;
+    --accent-soft: #F2E4E1;
+    --border-soft: #e7cfcf;
+
+    --shadow-soft: 0 8px 20px rgba(123, 78, 92, 0.12);
+    --shadow-card: 0 10px 25px rgba(123, 78, 92, 0.14);
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--background-gradient);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-main);
+    min-height: 100vh;
+    zoom: 1.0;
+}
+
+/* --- NAGŁÓWEK --- */
+.main-header {
+    background: var(--primary-gradient);
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: var(--shadow-soft);
+}
+
+.main-header h1 {
+    margin: 0;
+    color: var(--text-light);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+.logout-header-btn {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #7B4E5C;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 10px rgba(123, 78, 92, 0.18);
+}
+
+.logout-header-btn:hover {
+    background: #7B4E5C;
+    transform: translateY(-50%) scale(1.04);
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: var(--panel-bg);
+    padding: 20px;
+    width: 95%;
+    max-width: 1200px;
+    box-shadow: var(--shadow-soft);
+    margin: 20px 0 30px 0;
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+    box-sizing: border-box;
+}
+
+.controls label {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+input[type="date"],
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--border-soft);
+    outline: none;
+    font-size: 14px;
+}
+
+input[type="date"] {
+    background: #fff;
+    color: var(--text-main);
+}
+
+
+#setWeekBtn {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, opacity 0.2s;
+    box-shadow: 0 4px 10px rgba(194, 48, 78, 0.18);
+}
+
+#setWeekBtn:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+
+#weeksContainer {
+    width: 95%;
+    max-width: 1200px;
+}
+
+.week-block {
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: var(--shadow-card);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.week-block h2,
+.week-title {
+    color: var(--accent-mauve);
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.day-column {
+    background: rgba(255, 250, 249, 0.96);
+    border-radius: 12px;
+    min-height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #f1dddd;
+}
+
+.day-header {
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-dark);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-soft);
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+
+.event-preview {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(123, 78, 92, 0.08);
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    border-left: 4px solid var(--accent-red);
+}
+
+
+.add-btn {
+    margin-top: auto;
+    background: var(--accent-orange);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    align-self: center;
+    text-decoration: none;
+    transition: all 0.2s;
+    box-shadow: 0 3px 8px rgba(229, 163, 85, 0.3);
+}
+
+.add-btn:hover {
+    background: var(--accent-red);
+    color: white;
+    transform: scale(1.08);
+}
+
+
+.add-btn::after {
+    content: "dodaj zadanie";
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-mauve);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 10;
+}
+
+.add-btn::before {
+    content: "";
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--accent-mauve) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.add-btn:hover::after,
+.add-btn:hover::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: 52px;
+}
+
+.add-btn:hover::before {
+    bottom: 42px;
+}
+.week-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.week-title {
+    margin: 0;
+    color: #7B4E5C;
+    font-weight: 700;
+}
+
+.delete-week-btn {
+    background: #7B4E5C;
+    color: #FFFAF9;
+    border: none;
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.delete-week-btn:hover {
+    background: #6f4453;
+}

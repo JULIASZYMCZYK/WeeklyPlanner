@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Logowanie</title>
+  <link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+  <!-- główny kontener strony logowania -->
+  <div class="login_container">
+
+    <!-- kontener formularza logowania i sekcji rejestracji -->
+    <div class="login_form_container">
+
+      <!-- lewa część z formularzem logowania -->
+      <div class="left">
+        <form class="form_container" id="loginForm">
+          <!-- nagłówek formularza -->
+          <h1>Welcome back</h1>
+
+          <!-- pole do wpisania adresu e-mail -->
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            required
+            class="input"
+          />
+
+          <!-- pole do wpisania hasła -->
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+            required
+            class="input"
+          />
+
+          <!-- miejsce na komunikat błędu -->
+          <div id="errorMsg" class="error_msg" style="display: none;"></div>
+
+          <!-- przycisk wysyłający formularz logowania -->
+          <button type="submit" class="green_btn">Sign In</button>
+        </form>
+      </div>
+
+      <!-- prawa część z przejściem do rejestracji -->
+      <div class="right">
+        <!-- nagłówek sekcji rejestracji -->
+        <h1>New Here?</h1>
+
+        <!-- link do strony rejestracji -->
+        <a href="/signup.html">
+          <!-- przycisk przejścia do formularza rejestracji -->
+          <button type="button" class="white_btn">Sign Up</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/login.js"></script>
+</body>
+</html>

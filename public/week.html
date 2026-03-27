@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Planner tygodniowy</title>
+
+    <link rel="stylesheet" href="/css/week.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Planner tygodniowy</h1>
+        <button id="logoutBtn" class="logout-header-btn">Wyloguj się</button>
+    </header>
+
+    <!-- sekcja wyboru początku tygodnia -->
+    <div class="controls">
+        <!-- etykieta dla pola wyboru daty -->
+        <label for="mondayPicker">Wybierz początek tygodnia:</label>
+
+        <!-- pole wyboru daty początku tygodnia -->
+        <input type="date" id="mondayPicker">
+
+        <!-- przycisk pokazujący wybrany tydzień -->
+        <button id="setWeekBtn">Pokaż tydzień</button>
+    </div>
+
+    <!-- kontener, w którym będą wyświetlane tygodnie -->
+    <div id="weeksContainer">
+    </div>
+
+    <!-- podłączenie pliku JavaScript obsługującego planner tygodniowy -->
+    <script src="/week.js"></script>
+</body>
+</html>

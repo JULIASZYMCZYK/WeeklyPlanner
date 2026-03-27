@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rejestracja</title>
+  <link rel="stylesheet" href="/css/signup.css" />
+</head>
+<body>
+  <!-- główny kontener strony rejestracji -->
+  <div class="signup_container">
+    <!-- kontener zawierający lewą i prawą część strony -->
+    <div class="signup_form_container">
+      <!-- lewa sekcja z przyciskiem przejścia do logowania -->
+      <div class="left">
+        <h1>Welcome Back</h1>
+        <a href="/login.html">
+          <button type="button" class="white_btn">Sign In</button>
+        </a>
+      </div>
+
+      <!-- prawa sekcja z formularzem rejestracji -->
+      <div class="right">
+        <form class="form_container" id="signupForm">
+          <!-- nagłówek formularza -->
+          <h1>Create Account</h1>
+
+          <!-- pole do wpisania imienia -->
+          <input
+            type="text"
+            placeholder="First Name"
+            name="firstName"
+            id="firstName"
+            required
+            class="input"
+          />
+
+          <!-- pole do wpisania nazwiska -->
+          <input
+            type="text"
+            placeholder="Last Name"
+            name="lastName"
+            id="lastName"
+            required
+            class="input"
+          />
+
+          <!-- pole do wpisania adresu e-mail -->
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            id="email"
+            required
+            class="input"
+          />
+
+          <!-- pole do wpisania hasła -->
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+            required
+            class="input"
+          />
+
+          <!-- miejsce na komunikat błędu -->
+          <div id="errorMsg" class="error_msg" style="display: none;"></div>
+
+          <!-- przycisk wysyłający formularz rejestracji -->
+          <button type="submit" class="green_btn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/signup.js"></script>
+</body>
+</html>

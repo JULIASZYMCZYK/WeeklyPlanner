@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plan dnia</title>
+  <link rel="stylesheet" href="/css/day.css">
+</head>
+
+<body>
+
+  
+  <header class="main-header">
+    <h1 id="dayTitle">Dany dzień tygodnia</h1>
+    <button id="logoutBtn" class="logout-header-btn">Wyloguj się</button>
+  </header>
+
+  <!-- główny kontener strony -->
+  <div class="container">
+
+    <!-- sekcja wydarzeń -->
+    <div class="panel">
+      <!-- nagłówek sekcji wydarzeń -->
+      <h2>Wydarzenia</h2>
+      <!-- lista wydarzeń -->
+      <ul id="events"></ul>
+
+      <!-- formularz dodawania nowego wydarzenia -->
+      <h3>Dodaj wydarzenie</h3>
+      <form id="eventForm">
+        <!-- pole do wpisania wydarzenia -->
+        <input id="eventInput" placeholder="Wydarzenie będzie widoczne w podglądzie tygodnia" required />
+        <!-- przycisk dodawania wydarzenia -->
+        <button type="submit">Dodaj wydarzenie</button>
+      </form>
+
+      <!-- miejsce na komunikat błędu dla wydarzeń -->
+      <div id="eventMessage" class="error"></div>
+    </div>
+
+    <!-- sekcja zadań -->
+    <div class="panel">
+      <!-- nagłówek sekcji zadań -->
+      <h2>Zadania</h2>
+      <!-- lista zadań -->
+      <ul id="items"></ul>
+
+      <!-- formularz dodawania nowego zadania -->
+      <h3>Dodaj zadanie</h3>
+      <form id="addForm">
+        <!-- pole do wpisania treści zadania -->
+        <input id="textInput" placeholder="Wpisz swoje zadanie.." required />
+        <!-- przycisk dodawania zadania -->
+        <button type="submit">Dodaj</button>
+      </form>
+
+      <!-- miejsce na komunikat błędu dla zadań -->
+      <div id="message" class="error"></div>
+    </div>
+
+  </div>
+
+  <div class="center">
+    <!-- przycisk przenoszący do strony tygodnia -->
+    <button id="backBtn" onclick="window.location.href='/week.html'">← Wróć do tygodnia</button>
+  </div>
+
+  <script src="day.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.signup_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffdcd5;
+  background-image: 
+    radial-gradient(at 0% 100%, #f1cda3 0%, transparent 50%), 
+    radial-gradient(at 50% 50%, #e19aa6 0%, transparent 70%), 
+    radial-gradient(at 100% 0%, #ffdcd5 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+.signup_form_container {
+  width: 1100px;
+  height: 650px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-color: rgba(255, 250, 249, 0.36);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #c2304e 0%, #e5a355 100%);
+  padding: 20px;
+  color: #fffaf9;
+}
+
+.left h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* PRAWY PANEL - FORMULARZ (Na przezroczystym tle) */
+.right {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.form_container h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #7b4e5c;
+}
+
+.input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fffaf9; 
+  color: #7b4e5c;
+  margin: 10px 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+}
+
+.input::placeholder {
+  color: #7b4e5c;
+  opacity: 0.7;
+}
+
+
+.white_btn,
+.green_btn {
+  border: none;
+  outline: none;
+  padding: 18px 0;
+  border-radius: 30px;
+  width: 220px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.white_btn:hover,
+.green_btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.white_btn {
+  background-color: #f2e4e1;
+  color: #7b4e5c;
+}
+
+.green_btn {
+  background: linear-gradient(to right, #c2304e, #e5a355);
+  color: #fffaf9;
+  margin: 25px 0;
+}
+
+.error_msg {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  font-size: 14px;
+  background-color: #f34646;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+}

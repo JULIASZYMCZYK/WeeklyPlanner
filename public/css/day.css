@@ -1,0 +1,207 @@
+:root {
+    --primary-gradient: linear-gradient(90deg, #E5A355, #C2304E);
+    --background-gradient: linear-gradient(135deg, #F1CDA3 0%, #E19AA6 50%, #FFDCD5 100%);
+
+    --bg-color: #FFF6F4;
+    --panel-bg: rgba(255, 250, 249, 0.92);
+    --card-bg: #ffffff;
+
+    --text-main: #7B4E5C;
+    --text-dark: #5f3b47;
+    --text-light: #FFFAF9;
+
+    --accent-main: #7B4E5C;
+    --accent-red: #C2304E;
+    --accent-orange: #E5A355;
+    --accent-soft: #F2E4E1;
+    --border-soft: #e7cfcf;
+
+    --danger: #C2304E;
+    --success: #7B4E5C;
+
+    --shadow-soft: 0 8px 20px rgba(123, 78, 92, 0.12);
+    --shadow-card: 0 10px 25px rgba(123, 78, 92, 0.14);
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--background-gradient);
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+.main-header {
+    background: var(--primary-gradient);
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: var(--shadow-soft);
+}
+
+.main-header h1 {
+    margin: 0;
+    color: var(--text-light);
+    font-weight: 600;
+}
+.container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.panel {
+    flex: 1;
+    background: var(--panel-bg);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(4px);
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--accent-main);
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--accent-soft);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--text-main);
+    margin-top: 2rem;
+}
+
+/* Formularze i Inputy */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 12px 15px;
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s;
+    background: #fff;
+    color: var(--text-dark);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent-main);
+    box-shadow: 0 0 0 3px rgba(123, 78, 92, 0.12);
+}
+
+/* Przyciski */
+button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button[type="submit"] {
+    background: var(--primary-gradient);
+    color: white;
+    box-shadow: 0 4px 10px rgba(194, 48, 78, 0.18);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.03);
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--accent-soft);
+    color: var(--text-dark);
+    box-shadow: 0 2px 8px rgba(123, 78, 92, 0.05);
+}
+
+
+.delete-btn {
+    background: #fff1f2;
+    color: #C2304E;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid rgba(194, 48, 78, 0.25);
+}
+
+.edit-btn {
+    background: #fff7ed;
+    color: #E5A355;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid rgba(229, 163, 85, 0.3);
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#backBtn {
+    background: white;
+    color: var(--accent-main);
+    border: 1px solid var(--border-soft);
+    padding: 10px 25px;
+}
+
+#backBtn:hover {
+    color: white;
+    background: var(--accent-main);
+    border-color: var(--accent-main);
+}
+
+.task-done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.logout-header-btn {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background:#fff;
+    color: #7B4E5C;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 10px rgba(123, 78, 92, 0.18);
+}
+
+.logout-header-btn:hover {
+    background: #6f4453;
+    transform: translateY(-50%) scale(1.04);
+    filter: none;
+}
