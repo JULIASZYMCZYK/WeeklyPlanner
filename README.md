@@ -1,3 +1,6 @@
+Aplikacja "Weekly Planner"
+## Autor: Julia Szymczyk
+
 ## Zrzuty ekranu
 
 ### Logowanie
