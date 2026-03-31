@@ -10,7 +10,7 @@
 ![Podgląd tygodnia](./screenshots/podglad_tygodni.png)
 
 ### Dodawanie wydarzeń i zadań
-![Dodawanie zadań](./screenshots/dodawanie_zadań.png)
+![Dodawanie wydarzeń i zadań](./screenshots/dodawanie_zadań.png)
 
 ## Technologie
 - Node.js
@@ -20,6 +20,20 @@
 - HTML
 - CSS
 - JavaScript
-  
-### Konta testowe 
-Login: testowy@wp.pl Hasło: Testowe_konto123
+
+## Funkcjonalności
+- rejestracja i logowanie użytkownika
+- logowanie na własne konto
+- dodawanie nowych tygodni
+- usuwanie wybranych tygodni
+- przechodzenie do widoku konkretnego dnia
+- dodawanie zadań do wybranego dnia
+- dodawanie wydarzeń do wybranego dnia
+- wyświetlanie wydarzeń w oknie podglądu tygodnia
+- edytowanie zadań i wydarzeń
+- usuwanie zadań i wydarzeń
+- oznaczanie zadań jako wykonane poprzez ich przekreślenie
+
+## Konto testowe
+Login: `testowy@wp.pl`  
+Hasło: `Testowe_konto123`
