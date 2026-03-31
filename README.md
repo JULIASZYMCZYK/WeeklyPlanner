@@ -11,3 +11,15 @@
 
 ### Dodawanie wydarzeń i zadań
 ![Dodawanie zadań](./screenshots/dodawanie_zadań.png)
+
+## Technologie
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- HTML
+- CSS
+- JavaScript
+  
+### Konta testowe 
+Login: testowy@wp.pl Hasło: Testowe_konto123
